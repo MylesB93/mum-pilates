@@ -24,3 +24,17 @@
     text-decoration: none;
     margin-left: 20px;
 }
+
+.section {
+    margin-left: 20px;
+    margin-top: 20px;
+}
+
+.section-content {
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-content div {
+    width: 45%;
+}
