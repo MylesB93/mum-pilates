@@ -40,7 +40,7 @@ body {
 
 .section {
     /* margin-left: 20px;
-    margin-top: 20px; */
+    margin-top: 20px; */    
 
 }
 
@@ -50,4 +50,20 @@ body {
 
 .section-content div {
     /*width: 45%;*/
+}
+
+.container {
+    justify-content: center;
+    width: 80%;
+}
+
+.footer {
+    width: 100%;
+    background-color: #A0A0A0;
+    margin-top: 40px;
+    overflow: hidden;
+}
+
+.footer-content {
+    margin-left:13px;
 }
