@@ -25,10 +25,14 @@ body {
     justify-content: space-between;
 }
 
-.links a {
+.link {
     text-decoration: none;
     color: inherit;
     margin-left: 20px;
+}
+
+.links a.link:hover {
+    color: white;
 }
 
 .section {
