@@ -6,7 +6,6 @@
 body {
     margin: 0;
     font-family: "Ebrima", sans-serif;
-    font-size: 50%;
 }
 
 .main {
@@ -45,12 +44,16 @@ body {
 }
 
 .footer {
-    width: 100%;
     background-color: #A0A0A0;
-    margin-top: 144px;
-    overflow: hidden;
+    margin-top: auto;
 }
 
 .footer-content {
     margin-left:13px;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
