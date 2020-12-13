@@ -58,10 +58,6 @@ body {
     min-height: 100vh;
 }
 
-.map-section {
-    height: 30vh;
-}
-
 #map {
     height: 20vh;
     width: 50vh;
