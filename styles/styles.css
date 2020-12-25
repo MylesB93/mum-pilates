@@ -77,8 +77,13 @@ body {
     width: 15%;
 }
 
+#selected_img {
+    display: contents;
+}
+
 #image_list {
     list-style: none;
+    display: contents;
 }
 
 .hidden {
@@ -89,4 +94,6 @@ body {
     display: flex;
 }
 
-.gallery-element {}
+.gallery-btn {
+    padding-top: 10%;
+}
