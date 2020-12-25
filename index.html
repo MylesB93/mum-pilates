@@ -8,7 +8,7 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBgtrHGRQOmleEh9aP62f4eX1Svz5CGeU&callback=initMap&libraries=&v=weekly" defer></script>
 </head>
 
-<body onload="load()">
+<body>
     <div class="wrapper">
         <nav class="nav">
             <div class="nav-item">
@@ -47,12 +47,12 @@
                 </div>
                 <div class="section">
                     <h3 id="gallery">Gallery</h3>
-                    <div class="section-content">
-                        <span class="gallery-btn" onclick="prevImg()"><</span>
-                        <ul id="image_list">
+                    <div class="section-content gallery-section">
+                        <span class="gallery-btn gallery-element" onclick="prevImg()"><</span>
+                        <ul id="image_list" class="gallery-element">
                             <li id="selected_img"><img class="gallery-img" src="images/gallery/IMG_20191130_101746.jpg" alt="" /></li>
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_101922.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102323.jpg" alt="" /></li>
+                            <!-- <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102323.jpg" alt="" /></li>
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102329.jpg" alt="" /></li>
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102336.jpg" alt="" /></li>
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102351.jpg" alt="" /></li>
@@ -72,9 +72,9 @@
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102616.jpg" alt="" /></li>
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102636.jpg" alt="" /></li>
                             <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102646.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102943.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102943.jpg" alt="" /></li> -->
                         </ul>
-                        <span class="gallery-btn" onclick="nextImg()">></span>
+                        <span class="gallery-btn gallery-element" onclick="nextImg()">></span>
                     </div>
                 </div>
                 <div class="section">

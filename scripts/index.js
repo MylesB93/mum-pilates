@@ -29,16 +29,3 @@ function nextImg() {
     nextImg.id = 'selected_img';
     nextImg.classList.remove('hidden');
 }
-
-function load() {
-    var selectedImg = document.getElementById('selected_img');
-    var images = document.getElementById('image_list').getElementsByTagName('li');
-    for (i = 0; i < images.length; i++) {
-        images[i].addEventListener('click', activateImage);
-    }
-
-    function activateImage() {
-        selectedImg.innerHTML = this.innerHTML;
-        console.log('it works!');
-    }
-}

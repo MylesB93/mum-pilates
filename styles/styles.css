@@ -73,8 +73,6 @@ body {
 
 /*gallery*/
 
-#selected_img {}
-
 .gallery-img {
     width: 15%;
 }
@@ -87,26 +85,8 @@ body {
     display: none;
 }
 
-
-/*#selected_img {
-    max-width: 800px;
-    width: 100%;
-    height: auto;
-    margin: 0 auto;
+.gallery-section {
+    display: flex;
 }
 
-#selected_img img {
-    width: 100%;
-    height: auto;
-}
-
-#image_list li {
-    width: 30%;
-    display: none;
-    max-height: 250px;
-}
-
-#image_list li img {
-    width: 100%;
-    height: auto;
-}*/
+.gallery-element {}
