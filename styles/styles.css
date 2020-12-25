@@ -14,7 +14,8 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 15px; /*ensure there's always space between main and footer... not a fan of this tbh :/ */
+    margin-bottom: 15px;
+    /*ensure there's always space between main and footer... not a fan of this tbh :/ */
 }
 
 .nav {
@@ -50,7 +51,7 @@ body {
 }
 
 .footer-content {
-    margin-left:13px;
+    margin-left: 13px;
 }
 
 .wrapper {
@@ -61,6 +62,51 @@ body {
 
 #map {
     height: 20vh;
-    width: 50vh;
+    width: 80%;
     margin-left: 5%;
 }
+
+.content-description {
+    margin-bottom: 0.5%;
+}
+
+
+/*gallery*/
+
+#selected_img {}
+
+.gallery-img {
+    width: 15%;
+}
+
+#image_list {
+    list-style: none;
+}
+
+.hidden {
+    display: none;
+}
+
+
+/*#selected_img {
+    max-width: 800px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+#selected_img img {
+    width: 100%;
+    height: auto;
+}
+
+#image_list li {
+    width: 30%;
+    display: none;
+    max-height: 250px;
+}
+
+#image_list li img {
+    width: 100%;
+    height: auto;
+}*/

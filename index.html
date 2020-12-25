@@ -8,20 +8,20 @@
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDBgtrHGRQOmleEh9aP62f4eX1Svz5CGeU&callback=initMap&libraries=&v=weekly" defer></script>
 </head>
 
-<body>
+<body onload="load()">
     <div class="wrapper">
         <nav class="nav">
             <div class="nav-item">
                 Holistic Pilates with Cleo
             </div>
-            <div class="nav-item">
+            <!-- <div class="nav-item">
                 <div class="links">
-                    <a class="link" href="#about">About</a>
+                    <a class="link" href="https://www.facebook.com/Cleopilates"><img src="images/fb_icon.png"/></a>
                     <a class="link" href="#offer">What I Offer</a>
                     <a class="link" href="#contact">Contact</a>
-                    <a class="link" href="#location">Location</a>
+                    <a class="link" href="#location">Location</a> 
                 </div>
-            </div>
+            </div>-->
         </nav>
         <div class="main">
             <div class="container">
@@ -29,29 +29,8 @@
                     <h3 id="about">About</h3>
                     <div class="section-content">
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, neque sit amet
-                            lobortis
-                            condimentum, sem nisi pellentesque diam, sit amet finibus risus turpis eget quam. Nunc quis
-                            est
-                            volutpat, volutpat justo in, eleifend orci. Morbi dapibus gravida ex sed vulputate. Aenean
-                            vel
-                            ante
-                            orci.
-                        </div>
-                    </div>
-                </div>
-                <div class="section">
-                    <h3 id="offer">What I Offer</h3>
-                    <div class="section-content">
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, neque sit amet
-                            lobortis
-                            condimentum, sem nisi pellentesque diam, sit amet finibus risus turpis eget quam. Nunc quis
-                            est
-                            volutpat, volutpat justo in, eleifend orci. Morbi dapibus gravida ex sed vulputate. Aenean
-                            vel
-                            ante
-                            orci.
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, neque sit amet lobortis condimentum, sem nisi pellentesque diam, sit amet finibus risus turpis eget quam. Nunc quis est volutpat, volutpat justo in, eleifend orci. Morbi dapibus
+                            gravida ex sed vulputate. Aenean vel ante orci.
                         </div>
                     </div>
                 </div>
@@ -59,29 +38,50 @@
                     <h3 id="contact">Contact</h3>
                     <div class="section-content">
                         <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, neque sit amet
-                            lobortis
-                            condimentum, sem nisi pellentesque diam, sit amet finibus risus turpis eget quam. Nunc quis
-                            est
-                            volutpat, volutpat justo in, eleifend orci. Morbi dapibus gravida ex sed vulputate. Aenean
-                            vel
-                            ante
-                            orci.
+                            <ul class="content-description">
+                                <li><a href="https://www.facebook.com/Cleopilates">I'm on Facebook!</a></li>
+                                <li>Enquire by phone: 07592632529</li>
+                            </ul>
                         </div>
+                    </div>
+                </div>
+                <div class="section">
+                    <h3 id="gallery">Gallery</h3>
+                    <div class="section-content">
+                        <span class="gallery-btn" onclick="prevImg()"><</span>
+                        <ul id="image_list">
+                            <li id="selected_img"><img class="gallery-img" src="images/gallery/IMG_20191130_101746.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_101922.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102323.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102329.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102336.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102351.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102402.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102406.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102426.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102433.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102443.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102451.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102455.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102512.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102515.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102540.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102553.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102603.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102609.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102616.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102636.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102646.jpg" alt="" /></li>
+                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102943.jpg" alt="" /></li>
+                        </ul>
+                        <span class="gallery-btn" onclick="nextImg()">></span>
                     </div>
                 </div>
                 <div class="section">
                     <h3 id="location">Location</h3>
                     <div class="section-content">
-                        <div>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, neque sit amet
-                            lobortis
-                            condimentum, sem nisi pellentesque diam, sit amet finibus risus turpis eget quam. Nunc quis
-                            est
-                            volutpat, volutpat justo in, eleifend orci. Morbi dapibus gravida ex sed vulputate. Aenean
-                            vel
-                            ante
-                            orci.
+                        <div class="content-description">
+                            Find me at the Hildene Centre in West End, Southampton.
                         </div>
                     </div>
                     <div id="map"></div>
