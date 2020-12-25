@@ -14,7 +14,12 @@ function initMap() {
 
 function prevImg() {
     var currentImg = document.getElementById('selected_img');
-    var prevImg = currentImg.previousElementSibling
+    var prevImg = currentImg.previousElementSibling;
+
+    if (prevImg == null) {
+        prevImg = document.getElementById("image_list").lastElementChild;
+    }
+
     currentImg.classList.add('hidden');
     currentImg.removeAttribute('id');
     prevImg.id = 'selected_img';
@@ -24,6 +29,11 @@ function prevImg() {
 function nextImg() {
     var currentImg = document.getElementById('selected_img');
     var nextImg = currentImg.nextElementSibling;
+
+    if (nextImg == null) {
+        nextImg = document.getElementById("image_list").firstElementChild;
+    }
+
     currentImg.classList.add('hidden');
     currentImg.removeAttribute('id');
     nextImg.id = 'selected_img';
