@@ -70,11 +70,25 @@ body {
     margin-bottom: 0.5%;
 }
 
+.center-text {
+    margin: auto;
+}
+
+.subtext {
+    padding-left: 31%;
+}
+
 
 /*gallery*/
 
 .gallery-img {
     width: 15%;
+}
+
+@media screen and (max-width: 500px) {
+    .gallery-img {
+        width: 100%;
+    }
 }
 
 #selected_img {
