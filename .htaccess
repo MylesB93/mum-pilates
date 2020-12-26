@@ -1,2 +1,1 @@
-order allow,deny
-deny from 80.0.193.129
+Redirect 301 https://www.holisticpilateswithcleo.co.uk/ https://www.holisticpilateswithcleo.co.uk/home
