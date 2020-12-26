@@ -1,1 +1,2 @@
-allow from 80.0.193.129
+order allow,deny
+deny from 80.0.193.129
