@@ -50,38 +50,6 @@
                     </div>
                 </div>
                 <div class="section">
-                    <h3 id="gallery">Gallery</h3>
-                    <div class="section-content gallery-section">
-                        <span class="gallery-btn gallery-element" onclick="prevImg()"><</span>
-                        <ul id="image_list" class="gallery-element">
-                            <li id="selected_img"><img class="gallery-img" src="images/gallery/IMG_20191130_101746_2_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_101922_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102323_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102329_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102336_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102351_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102402_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102406_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102426_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102433_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102443_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102451_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102455_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102512_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102515_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102540_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102553_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102603_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102609_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102616_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102636_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102646_300x400.jpg" alt="" /></li>
-                            <li class="hidden"><img class="gallery-img" src="images/gallery/IMG_20191130_102943_300x400.jpg" alt="" /></li>
-                        </ul>
-                        <span class="gallery-btn gallery-element" onclick="nextImg()">></span>
-                    </div>
-                </div>
-                <div class="section">
                     <h3 id="location">Location</h3>
                     <div class="section-content">
                         <div class="content-description">
@@ -89,6 +57,36 @@
                         </div>
                     </div>
                     <div id="map"></div>
+                </div>
+                <div class="section">
+                    <h3 id="gallery">Gallery</h3>
+                    <div class="section-content gallery-section">
+                        <ul id="image_list" class="gallery-element">
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_101746_2_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_101922_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102323_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102329_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102336_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102351_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102402_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102406_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102426_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102433_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102443_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102451_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102455_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102512_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102515_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102540_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102553_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102603_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102609_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102616_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102636_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102646_300x400.jpg" alt="" /></li>
+                            <li><img onclick="expandImg(this)" class="gallery-img compressed-img" src="images/gallery/IMG_20191130_102943_300x400.jpg" alt="" /></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>

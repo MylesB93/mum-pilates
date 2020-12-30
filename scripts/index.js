@@ -39,3 +39,13 @@ function nextImg() {
     nextImg.id = 'selected_img';
     nextImg.classList.remove('hidden');
 }
+
+function expandImg(e) {
+    if (e.classList.contains("expanded-img")) {
+        e.classList.remove("expanded-img");
+        e.classList.add("compressed-img");
+    } else if (e.classList.contains("compressed-img")) {
+        e.classList.remove("compressed-img");
+        e.classList.add("expanded-img");
+    }
+}

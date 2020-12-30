@@ -81,9 +81,7 @@ body {
 
 /*gallery*/
 
-.gallery-img {
-    width: 15%;
-}
+.gallery-img {}
 
 @media screen and (max-width: 500px) {
     .gallery-img {
@@ -97,7 +95,9 @@ body {
 
 #image_list {
     list-style: none;
-    display: contents;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .hidden {
@@ -106,9 +106,18 @@ body {
 
 .gallery-section {
     display: flex;
+    flex-wrap: wrap;
 }
 
 .gallery-btn {
     padding-top: 8%;
     font-size: 230%;
+}
+
+.expanded-img {
+    width: 100%;
+}
+
+.compressed-img {
+    width: 15%;
 }
